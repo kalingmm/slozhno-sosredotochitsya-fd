@@ -1,12 +1,42 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+.page.theme_light {
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --title-color: #FFC2E6;
+  --subtitle-color: #353430;
+  --title-section-color: #353430;
+  --text-color: #353430;
+  --btn-color: #353430;
+  --btn-active: #353430;
+  --btn-hover-active: #adadab;
+  --btn-focus: #353430;
+  --main-font: 'IBM Plex mono';
+  --bg-image: url(../images/cover-image-light.png);
+  --shadow-title-color: #FF8DCB;
+  --shadow-title-color-1024: #FF0070;
+}
 
-:root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+.theme_light .header__decorated-item {
+  display: none;
+  opacity: 0;
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --accent-color: #FF8DCB;
+    --bg-color: #FFF1F7;
+    --title-color: #FFC2E6;
+    --subtitle-color: #353430;
+    --title-section-color: #353430;
+    --text-color: #353430;
+    --btn-color: #353430;
+    --btn-active: #353430;
+    --btn-hover-active: #adadab;
+    --btn-focus: #353430;
+    --main-font: 'IBM Plex mono';
+    --bg-image: url(../images/cover-image-light.png);
+    --shadow-title-color: #FF8DCB;
+    --shadow-title-color-1024: #FF0070;
+  }
+
 }
