@@ -14,28 +14,6 @@
   --shadow-title-color: #FF0070;
 }
 
-.theme_dark .header__decorated-item::before {
-  content: 'REC';
-  position: absolute;
-  color: var(--accent-color, #FF0070);
-  font-size: 18px;
-  inset-inline-end: 28px;
-  inset-block-start: 10px;
-}
-
-.theme_dark .header__decorated-item::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  color: var(--accent-color, #FF0070);
-  background-color: var(--accent-color, #FF0070);
-  filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
-  inline-size: 9px;
-  block-size: 9px;
-  inset-inline-end: 9px;
-  inset-block-start: 18px;
-}
-
 @media (width >=768px) {
 
   .theme_dark .header__decorated-item::before {

@@ -15,7 +15,7 @@
   --shadow-title-color-1024: #FF0070;
 }
 
-.theme_light .header__decorated-item {
+.theme_light.header__decorated-item {
   display: none;
   opacity: 0;
 }
