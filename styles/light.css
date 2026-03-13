@@ -1,4 +1,4 @@
-.page.theme_light {
+.page.theme-light {
   --accent-color: #FF8DCB;
   --bg-color: #FFF1F7;
   --title-color: #FFC2E6;
@@ -15,7 +15,7 @@
   --shadow-title-color-1024: #FF0070;
 }
 
-.theme_light.header__decorated-item {
+.theme-light.header__decorated-item {
   display: none;
   opacity: 0;
 }

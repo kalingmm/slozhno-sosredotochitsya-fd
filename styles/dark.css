@@ -1,4 +1,4 @@
-.page.theme_dark {
+.page.theme-dark {
   --accent-color: #ff0070;
   --bg-color: #000028;
   --title-color: #DB00FF;
@@ -16,11 +16,11 @@
 
 @media (width >=768px) {
 
-  .theme_dark .header__decorated-item::before {
+  .theme-dark .header__decorated-item::before {
     inset-block-start: 20px;
   }
 
-  .theme_dark .header__decorated-item::after {
+  .theme-dark .header__decorated-item::after {
     inset-block-start: 28px;
   }
 }

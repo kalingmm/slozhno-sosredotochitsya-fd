@@ -99,10 +99,10 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-inline-end: 1px solid var(--accent-color, #e8d3dc);
+  border-inline-end: 1px solid var(--accent-color, #FF0070);
   border-block-start: 1px solid var(--accent-color, #FF0070);
-  inset-block-start: 10px;
-  inset-inline-end: 0;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -112,8 +112,8 @@
   position: absolute;
   border-inline-start: 1px solid var(--accent-color, #FF0070);
   border-block-end: 1px solid var(--accent-color, #FF0070);
+  inset-inline-start: 10px;
   inset-block-end: 10px;
-  inset-inline-start: 0;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -171,7 +171,7 @@
 }
 
 .section__subtitle {
-  color: #000028;
+  color: rgb(53 52 48);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -180,15 +180,6 @@
 
 .section__text {
   color: var(--text-color, #F1B2CE);
-
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 130%;
-}
-
-.section__text-title {
-  color: #000028;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -251,28 +242,6 @@
   font-style: normal;
   line-height: 82.5%;
   text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
-}
-
-.footer__text::before {
-  content: '';
-  position: absolute;
-  border-inline-end: 1px solid var(--accent-color, #FF0070);
-  border-block-start: 1px solid var(--accent-color, #FF0070);
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
-  inline-size: 25px;
-  block-size: 25px;
-}
-
-.footer__text::after {
-  content: '';
-  position: absolute;
-  border-inline-start: 1px solid var(--accent-color, #FF0070);
-  border-block-end: 1px solid var(--accent-color, #FF0070);
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
-  inline-size: 25px;
-  block-size: 25px;
 }
 
 @media (width >=768px) {
@@ -413,7 +382,7 @@
   }
 
   .sunset {
-    grid-area: sunset;
+     grid-area: sunset;
   }
 
   .ice-cream {
@@ -488,6 +457,9 @@
   .section__decrease-in-concentration {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, min-content);
+    grid-template-areas:
+    "decrease-title . ."
+      "decrease-multitasking decrease-food decrease-gadgets";
    
   }
 
