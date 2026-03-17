@@ -1,5 +1,6 @@
-.page.theme-light {
+.theme-light {
   --accent-color: #FF8DCB;
+  --accent-color-text: #353430;
   --bg-color: #FFF1F7;
   --title-color: #FFC2E6;
   --subtitle-color: #353430;

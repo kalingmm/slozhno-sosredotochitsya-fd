@@ -99,10 +99,10 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  border-inline-end: 1px solid var(--accent-color, #FF0070);
-  border-block-start: 1px solid var(--accent-color, #FF0070);
-  inset-inline-start: 10px;
-  inset-block-end: 10px;
+  border-inline-end: 1px solid var(--accent-color-text);
+  border-block-start: 1px solid var(--accent-color-text);
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -110,8 +110,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-inline-start: 1px solid var(--accent-color, #FF0070);
-  border-block-end: 1px solid var(--accent-color, #FF0070);
+  border-inline-start: 1px solid var(--accent-color-text);
+  border-block-end: 1px solid var(--accent-color-text);
   inset-inline-start: 10px;
   inset-block-end: 10px;
   inline-size: 25px;
@@ -128,27 +128,6 @@
   line-height: 130%;
 }
 
-.theme_dark .header__decorated-item::before {
-  content: 'REC';
-  position: absolute;
-  color: var(--accent-color, #FF0070);
-  font-size: 18px;
-  inset-inline-end: 28px;
-  inset-block-start: 10px;
-}
-
-.theme_dark .header__decorated-item::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  color: var(--accent-color, #FF0070);
-  background-color: var(--accent-color, #FF0070);
-  filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
-  inline-size: 9px;
-  block-size: 9px;
-  inset-inline-end: 9px;
-  inset-block-start: 18px;
-}
 .main {
   margin: 40px 10px;
 }
@@ -171,11 +150,17 @@
 }
 
 .section__subtitle {
-  color: rgb(53 52 48);
+  color: var(--text-color);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
+}
+
+.card__title-desk{
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: var(--font-size)
 }
 
 .section__text {
@@ -255,16 +240,6 @@
       ". subtitle";
     margin: 0 20px;
     min-block-size: 1024px;
-  }
-
-  .header__title::before {
-    inset-inline-end: 0;
-    inset-block-start: 20px;
-  }
-
-  .header__title::after {
-    inset-inline-start: 0;
-    inset-block-end: 20px;
   }
 
   .header__title {
@@ -408,18 +383,6 @@
   .footer__text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
-  .footer__text::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
-  }
-
-  .footer__text::after {
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
-  }
-
-}
 
 @media (width >=1024px) {
 
